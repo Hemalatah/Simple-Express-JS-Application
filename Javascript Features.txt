@@ -1,0 +1,35 @@
+Favorite Features:
+
+1. Client side/Server side
+
+As javascript has access to Document object model of browser, we can actually change the structure of web pages at runtime. Due to this, javascript can be used to add different effects to webpages. On the other hand, javascript could be used on the server side as well. JavaScript can also embedded in HTML pages. The server-side statements can connect to relational databases, share information across users of an application, access the file system on the server. HTML pages with server-side JavaScript can also include client-side JavaScript.
+
+2. Browser support and developer's tools:
+
+All browsers have accepted javascript as a scripting language for them and provides integrated support for it. All we need to do is to handle some of the tasks that are dependent on DOM (Document Object Model) of different browsers properly.
+
+JavaScript has a special assert of developer tools for diagnosing bugs and examining application code. We should be able to set and use breakpoints, use watch mode and the console to test for the value of expressions, and understand the stack traces. Also, there are elements panel to understand and manipulate the DOM, and the network panel to debug network requests.
+
+3. Functional programming
+
+In javascript, function could be assigned to variables just like any other data types. Not only that, but a function can accept another function as a parameter and can also return a function. We can have functions with no name as well such as 'anonymous function'. We also have another function which can be invoked once after its definition is done, thats is Immediately Invoked Function Execution(IIFE). Clearly, this gives you the ability to code in functional programming style.
+
+4. Support for objects
+Javascript is an object oriented language. However, the way javascript handles objects and inheritance is bit different from conventional object oriented programming languages like Java, python. Due to this, javascript supports most of the object oriented concepts while being simple to learn and use.
+
+These are some of the features that give javascript an ability to handle simple as well as complex tasks. Most importantly, Prototypal Inheritance is an important assert in object oriented programming. This concept helps to improve memory efficiency and avoid redundancy. Due to this, javascript has been remained as the most popular programming language for a long time. 
+
+
+
+
+Least Favorite Features:
+
+1.Cross Browser Compatibilty Isuues:
+
+The term "cross-browser" in the JavaScript world refers to the ability to run the JavaScript code in multiple web browsers. So, "cross-browser compatibility" means When a web application can be run on different web browsers and present an identical look and feel. JavaScript is sometimes interpreted differently by different browsers. In which, client-side scripts can be a little unpredictable. Anyway, there are some tools and services available to check the script upfront.
+
+2. Client-side JavaScript does not allow the reading or writing of files. This has been kept for security reason though.
+
+3. JavaScript can not be used for Networking applications because there is no such support available at this moment.
+
+4. Javascript is 'single-threaded'. Some paradigms should be used to add asynchronous capabilities like call back, event handler and promises.

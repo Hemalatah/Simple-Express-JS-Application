@@ -1,0 +1,72 @@
+Closures in Jaavscript:
+
+A closure is simply a function(inner function) defined within another function(outer function). 
+
+It has two important features:
+- the inner function remembers the environment in which it was created
+- the inner function has access to the outer function’s variables and parameters.
+
+1. Basic usage
+
+What does the outer function do:
+- Define local variables
+- define the inner function and call it
+
+### Let's look at the example:
+
+function createBase(x) {
+	return function(y) {
+	return x + y; }
+};
+
+var addSix = createBase(6); 
+addSix(10); // returns 16
+
+variable addSix is defined with an inner function that remembers the out function local variable 'x=6'. That's why it gives the result 16.
+
+2. Another powerful feature of closures is to use the outer function as a factory for creating inner functions
+
+### Another example
+
+function beautify(language) {
+    return function(prefix) {
+        return prefix + ' ' + language;
+    };
+}
+
+var javascript = beautify('JavaScript');
+
+javascript('Eloquent');  // returns Eloquent JavaScript
+
+
+3. Many object-oriented languages provide the ability to declare methods as either public or private. JavaScript doesn’t have this functionality built in, but it does allow to emulate this functionality through the use of closures, which is known as the module pattern.
+
+var voteForJS = (function() {
+    var vote = 60000;
+    function changeBy(num) {
+        vote += num;
+    }
+    return {
+        raise: function() {
+            changeBy(+1);
+        },
+        lower: function() {
+            changeBy(-1);
+        },
+        currentVote: function() {
+            return vote;
+        }
+    }; 
+})();
+
+voteForJS.currentVote(); // returns 60,000
+voteForJS.raise();
+voteForJS.currentAmount(); // returns 60,001
+voteForJS.lower();
+voteForJS.currentVote(); // returns 60,000
+
+voteForJS.changeBy(+1) // TypeError: undefined is not a function
+
+Neither the vote variable nor the changeBy function are available outside of voteForJS function. However, raise, lower and currentAmount all have access to them and can be called on voteForJS. closures keeps the general namespaces clean, preventing naming collisions. 
+
+There are hell lot of usage of closures in javascript. These are the simple ways to understand.

@@ -1,0 +1,54 @@
+Promises:
+
+The new Promise() constructor should only be used for legacy async tasks, like usage of setTimeout or XMLHttpRequest. A new Promise is created with the new keyword and the promise provides resolve and reject functions to the provided callback:
+
+A promise has 3 states. They are:
+
+- Pending
+- Resolved
+- Rejected
+
+###example
+
+var isDMVPassed = true;
+
+// Promise
+var willIGetLicense = new Promise(
+    function (resolve, reject) {
+        if (isDMVPassed) {
+            var license = {
+                Name: 'Hema',
+                Id: zx34V85
+            };
+            resolve(license); // fulfilled
+        } else {
+            var reason = new Error('U failed the test :-\');
+            reject(reason); // reject
+        }
+
+    }
+);
+
+var askDMV = function () {
+    willIGetLicense
+        .then(function (fulfilled) {
+            // yay, I got my license
+            console.log(fulfilled);
+            // output: { Name: 'Hema', Id: zx34V85 };
+        })
+        //.then()
+        //.then().....
+        .catch(function (error) {
+            // oops, try next time
+            console.log(error.message);
+         	// output: 'U failed the test :-\'
+        });
+};
+
+askDMV();
+
+Steps in promises:
+
+- A boolean 'isDMVPassed' is defined.
+- A promise 'willIGetNewPhone' is defined. The promise can be either resolved (yay, I got my license) or rejected(U failed the test).
+- When the result is successful, call resolve(fullfillment), if the result fails, call reject(error) in the promise. In this example, 'isDMVPassed' is true, I will get a license. Therefore, resolve function is called with license variable. 'isDMVPassed' is false, reject function is called with a reason reject(reason);
