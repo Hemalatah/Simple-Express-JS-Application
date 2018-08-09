@@ -9,3 +9,8 @@ Steps to make the app running:
   - Type "npm install" to save the node modules in to the current directory
   - Type "npm start" to lauch the app in the localhost: 5000
   - Goto "http://localhost:5000/" in your browser 
+  
+  
+Steps to do automated testing:
+  - In the treminal, make sure the current directory is Simple-Express-JS-Application
+  - Type "npm test" to see the test logs
