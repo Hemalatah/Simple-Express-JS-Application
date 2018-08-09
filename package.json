@@ -1,0 +1,15 @@
+{
+  "name": "expressRouter",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node Server.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "mocha": "^3.4.1",
+    "really-need": "^1.9.2",
+    "should": "^8.4.0",
+    "supertest": "^1.2.0"
+  }
+}
