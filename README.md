@@ -1,7 +1,7 @@
 # Simple-Express-JS-Application
 An Express JS Application to embrace the concept of routing.
 
-Steps to make the app running:
+### Steps to make the app running:
 
   - Type "git clone https://github.com/Hemalatah/Simple-Express-JS-Application.git" in your local machine after 'cd'ing to the folder where you need the application code to be seated.
   - Type "cd Simple-Express-JS-Application/" to enter into the repo in the local machine
@@ -11,6 +11,6 @@ Steps to make the app running:
   - Goto "http://localhost:5000/" in your browser 
   
   
-Steps to do automated testing:
-  - In the treminal, make sure the current directory is Simple-Express-JS-Application
+### Steps to do automated testing:
+  - In the terminal, make sure the current directory is Simple-Express-JS-Application
   - Type "npm test" to see the test logs
