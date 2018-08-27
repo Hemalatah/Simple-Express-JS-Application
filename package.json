@@ -2,7 +2,7 @@
   "name": "expressrouter",
   "version": "0.0.1",
   "scripts": {
-    "start": "node Server.js",
+    "start": "node server.js",
     "test": "mocha"
   },
   "dependencies": {
