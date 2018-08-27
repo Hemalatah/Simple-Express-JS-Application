@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: nodeapp
-        image: gcr.io/kube-31762/nodeapp:v1
+        image: gcr.io/symmetric-ray-211101/nodeapp:v1
         resources:
           requests:
             cpu: 100m
