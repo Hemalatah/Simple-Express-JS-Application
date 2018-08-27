@@ -1,5 +1,5 @@
 FROM node:alpine
-COPY package.json package.json
+COPY --from=0 /go/bin/hello-app .
 RUN npm install
 
 # Add your source files
