@@ -37,8 +37,8 @@ app.use("/*",function(req,res){
   res.sendFile(__dirname + "/public/404.html");
 });
 
-var server = app.listen(5000,function(){
-  console.log("Live at Port 5000");
+var server = app.listen(8050,function(){
+  console.log("Live at Port 8050");
 });
 
 module.exports = server;
